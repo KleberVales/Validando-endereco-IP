@@ -1,17 +1,20 @@
 package validando;
 
+import java.io.*;
+import java.util.*;
+
 public class Solution {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-    Scanner sc = new Scanner(System.in);
-    while(sc.hasNext())
-    {
-        String IP = sc.next();
-        System.out.println(IP.matches(new MyRegex().pattern));
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNext())
+        {
+            String IP = sc.next();
+            System.out.println(IP.matches(new MyRegex().pattern));
+        }
+
     }
-
-}
 }
 
 class MyRegex {
